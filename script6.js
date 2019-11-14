@@ -16,37 +16,37 @@ let count = 0;
 
 ARN.forEach (content => {
   switch (content) {
-    case "UCU", "UCC", "UCA", "UCG", "AGU", "AGC":
+    case "UCU": case "UCC": case "UCA": case "UCG": case "AGU": case "AGC":
       console.log(count);
       ARN[count] = "Sérine";
       count += 1;
       console.log(content);
       break;
-    case "CCU", "CCC", "CCA", "CCG":
+    case "CCU": case "CCC": case "CCA": case "CCG":
       console.log(count);
       ARN[count] = "Proline";
       count += 1;
       console.log(content);
       break;
-    case "UUA", "UUG":
+    case "UUA": case "UUG":
       console.log(count);
       ARN[count] = "Leucine";
       count += 1;
       console.log(content);
       break;
-    case "UUU", "UUC":
+    case "UUU": case "UUC":
       console.log(count);
       ARN[count] = "Phénylalanine";
       count += 1;
       console.log(content);
       break;
-    case "CGU", "CGC", "CGA", "CGG", "AGA", "AGG":
+    case "CGU": case "CGC": case "CGA": case "CGG": case "AGA": case "AGG":
       console.log(count);
       ARN[count] = "Arginine ";
       count += 1;
       console.log(content);
       break;
-    case "UAU", "UAC":
+    case "UAU": case "UAC":
       console.log(count);
       ARN[count] = "Tyrosine";
       count += 1;
@@ -61,5 +61,5 @@ ARN.forEach (content => {
       break;
   }
 })
-
 console.log(ARN);
+console.log(ARN[0] + "-" + ARN[1] + "-" + ARN[2] + "-" + ARN[3] + "-" + ARN[4] + "-" + ARN[5]);
